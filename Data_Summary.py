@@ -220,7 +220,7 @@ if uploaded_trans is not None:
 
                 unmatched_store_fig = go.Figure(go.Indicator(
                     mode="number",
-                    title={"text": "<b>Total Unmatched StoreIDs</b>","font": {"color": '#2B3990'}},
+                    title={"text": "<b>Unmatched StoreIDs</b>","font": {"color": '#2B3990'}},
                     value=total_unmatched_store,
                     number={
                         "font": {"color": "red" if len(missing_loc) > 0 else "green"}
@@ -237,7 +237,7 @@ if uploaded_trans is not None:
 
                 unmatched_trans_fig = go.Figure(go.Indicator(
                     mode="number",
-                    title={"text": "<b>Total Unmatched Transactions</b>","font": {"color": '#2B3990'}},
+                    title={"text": "<b>Unmatched Transactions</b>","font": {"color": '#2B3990'}},
                     value=total_unmatched_trans,
                     number={
                         "font": {"color": "red" if float(missing_dates) > 0 else "green"}
