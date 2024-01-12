@@ -1,14 +1,10 @@
 import pandas as pd 
 from datetime import datetime 
-from IPython.display import HTML
-from colorama import Fore, Style
 import plotly.express as px
 import plotly.graph_objs as go
 import plotly.subplots as sp
-from dateutil.relativedelta import relativedelta
 import warnings
 warnings.filterwarnings("ignore")
-#from data_loader import load_uploaded_data
 import streamlit as st 
 pd.options.display.float_format = '{:,.2f}'.format
 
