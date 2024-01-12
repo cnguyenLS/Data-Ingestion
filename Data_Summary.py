@@ -399,7 +399,7 @@ if uploaded_trans is not None:
                     missing_loc['Total_Sales'] = missing_loc['Total_Sales'].apply(format_number)
                     if len(missing_loc) > 0:
                         st.markdown(
-                            f"<font color='red'> Warning: The following information pertains to unmatched storeIDs.</font>  \n",
+                            f"<font color='red'> Warning: <br> The following information pertains to unmatched storeIDs.</font>  \n",
                             unsafe_allow_html=True
                         )
                         table = go.Figure(data=[go.Table(
