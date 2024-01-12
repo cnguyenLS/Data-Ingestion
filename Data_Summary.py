@@ -548,7 +548,7 @@ if uploaded_trans is not None:
                     name='Sales'
                 ))
 
-                fig.add_hline(y=avg_sales_daily, line_dash='dash', line_color='white', name='Average')
+                fig.add_hline(y=avg_sales_daily, line_dash='dash', line_color='red', name='Average')
 
                 fig.add_annotation(
                     x=daily_sale['wrt_dat'].max(),
@@ -558,8 +558,8 @@ if uploaded_trans is not None:
                     arrowhead=2,
                     arrowsize=1,
                     arrowwidth=2,
-                    arrowcolor='white',
-                    font=dict(size=12, color='white'),
+                    arrowcolor='red',
+                    font=dict(size=12, color='red'),
                     align='center'
                 )
 
