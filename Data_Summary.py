@@ -396,8 +396,8 @@ if uploaded_trans is not None:
                         st.markdown("<font color='green'>There are no missing dates. No data to show here. </font>",unsafe_allow_html=True)
                 
                 with col2: 
-                    #missing_loc['Total_Sales'] = missing_loc['Total_Sales'].apply(format_number)
-                    if len(missing_loc) > 0:
+                    missing_loc['Total_Sales'] = missing_loc['Total_Sales'].apply(format_number)
+                    if len(missing_loc) > 0 :
                         st.markdown(
                             f"<font color='red'> Warning: <br> The following information pertains to unmatched storeIDs.</font>",
                             unsafe_allow_html=True
