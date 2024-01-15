@@ -506,7 +506,7 @@ if uploaded_trans is not None:
 
         ###################### Daily avg ticket chart ############3
                 ticket_sales_test = ticket_sales.groupby(['wrt_dat','db_customerID'])['wrt_sale'].sum().reset_index()
-                #ticket_sales_test =  ticket_sales_test[ticket_sales_test['wrt_dat'] >= '2021-01-01']
+                #ticket_sales_test =  ticket_sales_test[ticket_sales_test['wrt_dat'] >= '2022-01-01']
                 test_sales_month = ticket_sales_test.groupby(['wrt_dat'])['wrt_sale'].mean().reset_index()
 
 
