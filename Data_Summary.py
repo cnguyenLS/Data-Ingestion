@@ -873,7 +873,7 @@ if uploaded_trans is not None:
 
 
                     with col2: 
-                        explain_message2 = f"<font color='red'> Here is the glimspe of the sales analysis of those unmatched db_customerIDs</font><br>"
+                        explain_message2 = f"<font color='red'> The table below shows a glimspe of the sales analysis of those unmatched db_customerIDs</font><br>"
                         st.markdown(explain_message2, unsafe_allow_html=True)
 
                         trans_no_cusid1 = trans_no_cusid.copy()
