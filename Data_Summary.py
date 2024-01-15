@@ -67,7 +67,7 @@ if uploaded_trans is not None:
         if uploaded_loc is not None:
             missing_loc = pd.read_csv(uploaded_loc)
             master_trans["wrt_dat"] = pd.to_datetime(master_trans["wrt_dat"])
-            master_trans = master_trans[master_trans['wrt_dat'] >= '2021-01-01']
+            master_trans = master_trans[master_trans['wrt_dat'] >= '2022-01-01']
             
          # Filter transactions based on date range
             st.sidebar.title("Time Filter")
