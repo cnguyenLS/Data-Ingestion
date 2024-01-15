@@ -240,7 +240,7 @@ if uploaded_trans is not None:
                     title={"text": "<b>Unmatched Transactions</b>","font": {"color": '#2B3990'}},
                     value=total_unmatched_trans,
                     number={
-                        "font": {"color": "red" if float(missing_dates) > 0 else "green"}
+                        "font": {"color": "red" if float(total_unmatched_trans) > 0 else "green"}
                     },
                 ))
 
